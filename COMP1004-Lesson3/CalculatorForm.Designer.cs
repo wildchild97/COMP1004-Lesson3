@@ -47,6 +47,8 @@
             this.buttonDecimal = new System.Windows.Forms.Button();
             this.ResultTextBox = new System.Windows.Forms.TextBox();
             this.BackButton = new System.Windows.Forms.Button();
+            this.LogoPictureBox = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.LogoPictureBox)).BeginInit();
             this.SuspendLayout();
             // 
             // buttonClear
@@ -56,6 +58,7 @@
             this.buttonClear.Name = "buttonClear";
             this.buttonClear.Size = new System.Drawing.Size(50, 50);
             this.buttonClear.TabIndex = 0;
+            this.buttonClear.Tag = "Other";
             this.buttonClear.Text = "C";
             this.buttonClear.UseVisualStyleBackColor = true;
             this.buttonClear.Click += new System.EventHandler(this.CalculatorButton_Click);
@@ -67,6 +70,7 @@
             this.buttonAdd.Name = "buttonAdd";
             this.buttonAdd.Size = new System.Drawing.Size(50, 50);
             this.buttonAdd.TabIndex = 16;
+            this.buttonAdd.Tag = "Operator";
             this.buttonAdd.Text = "+";
             this.buttonAdd.UseVisualStyleBackColor = true;
             this.buttonAdd.Click += new System.EventHandler(this.CalculatorButton_Click);
@@ -78,6 +82,7 @@
             this.buttonSubtract.Name = "buttonSubtract";
             this.buttonSubtract.Size = new System.Drawing.Size(50, 50);
             this.buttonSubtract.TabIndex = 13;
+            this.buttonSubtract.Tag = "Operator";
             this.buttonSubtract.Text = "-";
             this.buttonSubtract.UseVisualStyleBackColor = true;
             this.buttonSubtract.Click += new System.EventHandler(this.CalculatorButton_Click);
@@ -89,6 +94,7 @@
             this.buttonMulitiply.Name = "buttonMulitiply";
             this.buttonMulitiply.Size = new System.Drawing.Size(50, 50);
             this.buttonMulitiply.TabIndex = 9;
+            this.buttonMulitiply.Tag = "Operator";
             this.buttonMulitiply.Text = "x";
             this.buttonMulitiply.UseVisualStyleBackColor = true;
             this.buttonMulitiply.Click += new System.EventHandler(this.CalculatorButton_Click);
@@ -100,6 +106,7 @@
             this.buttonDivide.Name = "buttonDivide";
             this.buttonDivide.Size = new System.Drawing.Size(50, 50);
             this.buttonDivide.TabIndex = 5;
+            this.buttonDivide.Tag = "Operator";
             this.buttonDivide.Text = "/";
             this.buttonDivide.UseVisualStyleBackColor = true;
             this.buttonDivide.Click += new System.EventHandler(this.CalculatorButton_Click);
@@ -111,6 +118,7 @@
             this.buttonEqual.Name = "buttonEqual";
             this.buttonEqual.Size = new System.Drawing.Size(50, 50);
             this.buttonEqual.TabIndex = 1;
+            this.buttonEqual.Tag = "Operator";
             this.buttonEqual.Text = "=";
             this.buttonEqual.UseVisualStyleBackColor = true;
             this.buttonEqual.Click += new System.EventHandler(this.CalculatorButton_Click);
@@ -122,6 +130,7 @@
             this.buttonZero.Name = "buttonZero";
             this.buttonZero.Size = new System.Drawing.Size(50, 50);
             this.buttonZero.TabIndex = 14;
+            this.buttonZero.Tag = "Operand";
             this.buttonZero.Text = "0";
             this.buttonZero.UseVisualStyleBackColor = true;
             this.buttonZero.Click += new System.EventHandler(this.CalculatorButton_Click);
@@ -133,6 +142,7 @@
             this.buttonOne.Name = "buttonOne";
             this.buttonOne.Size = new System.Drawing.Size(50, 50);
             this.buttonOne.TabIndex = 10;
+            this.buttonOne.Tag = "Operand";
             this.buttonOne.Text = "1";
             this.buttonOne.UseVisualStyleBackColor = true;
             this.buttonOne.Click += new System.EventHandler(this.CalculatorButton_Click);
@@ -144,6 +154,7 @@
             this.buttonTwo.Name = "buttonTwo";
             this.buttonTwo.Size = new System.Drawing.Size(50, 50);
             this.buttonTwo.TabIndex = 11;
+            this.buttonTwo.Tag = "Operand";
             this.buttonTwo.Text = "2";
             this.buttonTwo.UseVisualStyleBackColor = true;
             this.buttonTwo.Click += new System.EventHandler(this.CalculatorButton_Click);
@@ -155,6 +166,7 @@
             this.buttonThree.Name = "buttonThree";
             this.buttonThree.Size = new System.Drawing.Size(50, 50);
             this.buttonThree.TabIndex = 12;
+            this.buttonThree.Tag = "Operand";
             this.buttonThree.Text = "3";
             this.buttonThree.UseVisualStyleBackColor = true;
             this.buttonThree.Click += new System.EventHandler(this.CalculatorButton_Click);
@@ -166,6 +178,7 @@
             this.buttonFour.Name = "buttonFour";
             this.buttonFour.Size = new System.Drawing.Size(50, 50);
             this.buttonFour.TabIndex = 6;
+            this.buttonFour.Tag = "Operand";
             this.buttonFour.Text = "4";
             this.buttonFour.UseVisualStyleBackColor = true;
             this.buttonFour.Click += new System.EventHandler(this.CalculatorButton_Click);
@@ -177,6 +190,7 @@
             this.buttonFive.Name = "buttonFive";
             this.buttonFive.Size = new System.Drawing.Size(50, 50);
             this.buttonFive.TabIndex = 7;
+            this.buttonFive.Tag = "Operand";
             this.buttonFive.Text = "5";
             this.buttonFive.UseVisualStyleBackColor = true;
             this.buttonFive.Click += new System.EventHandler(this.CalculatorButton_Click);
@@ -188,6 +202,7 @@
             this.buttonSix.Name = "buttonSix";
             this.buttonSix.Size = new System.Drawing.Size(50, 50);
             this.buttonSix.TabIndex = 8;
+            this.buttonSix.Tag = "Operand";
             this.buttonSix.Text = "6";
             this.buttonSix.UseVisualStyleBackColor = true;
             this.buttonSix.Click += new System.EventHandler(this.CalculatorButton_Click);
@@ -199,6 +214,7 @@
             this.buttonSeven.Name = "buttonSeven";
             this.buttonSeven.Size = new System.Drawing.Size(50, 50);
             this.buttonSeven.TabIndex = 2;
+            this.buttonSeven.Tag = "Operand";
             this.buttonSeven.Text = "7";
             this.buttonSeven.UseVisualStyleBackColor = true;
             this.buttonSeven.Click += new System.EventHandler(this.CalculatorButton_Click);
@@ -210,6 +226,7 @@
             this.buttonEight.Name = "buttonEight";
             this.buttonEight.Size = new System.Drawing.Size(50, 50);
             this.buttonEight.TabIndex = 3;
+            this.buttonEight.Tag = "Operand";
             this.buttonEight.Text = "8";
             this.buttonEight.UseVisualStyleBackColor = true;
             this.buttonEight.Click += new System.EventHandler(this.CalculatorButton_Click);
@@ -221,6 +238,7 @@
             this.buttonNine.Name = "buttonNine";
             this.buttonNine.Size = new System.Drawing.Size(50, 50);
             this.buttonNine.TabIndex = 4;
+            this.buttonNine.Tag = "Operand";
             this.buttonNine.Text = "9";
             this.buttonNine.UseVisualStyleBackColor = true;
             this.buttonNine.Click += new System.EventHandler(this.CalculatorButton_Click);
@@ -232,6 +250,7 @@
             this.buttonDecimal.Name = "buttonDecimal";
             this.buttonDecimal.Size = new System.Drawing.Size(50, 50);
             this.buttonDecimal.TabIndex = 15;
+            this.buttonDecimal.Tag = "Other";
             this.buttonDecimal.Text = ".";
             this.buttonDecimal.UseVisualStyleBackColor = true;
             this.buttonDecimal.Click += new System.EventHandler(this.CalculatorButton_Click);
@@ -255,13 +274,24 @@
             this.BackButton.Name = "BackButton";
             this.BackButton.Size = new System.Drawing.Size(50, 50);
             this.BackButton.TabIndex = 19;
+            this.BackButton.Tag = "Other";
             this.BackButton.Text = "B";
             this.BackButton.UseVisualStyleBackColor = true;
+            // 
+            // LogoPictureBox
+            // 
+            this.LogoPictureBox.Image = global::COMP1004_Lesson3.Properties.Resources.CalculatorLogo;
+            this.LogoPictureBox.Location = new System.Drawing.Point(5, 4);
+            this.LogoPictureBox.Name = "LogoPictureBox";
+            this.LogoPictureBox.Size = new System.Drawing.Size(297, 94);
+            this.LogoPictureBox.TabIndex = 20;
+            this.LogoPictureBox.TabStop = false;
             // 
             // CalculatorForm
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.ClientSize = new System.Drawing.Size(304, 441);
+            this.Controls.Add(this.LogoPictureBox);
             this.Controls.Add(this.BackButton);
             this.Controls.Add(this.ResultTextBox);
             this.Controls.Add(this.buttonDecimal);
@@ -284,7 +314,9 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.MaximizeBox = false;
             this.Name = "CalculatorForm";
+            this.Tag = "Other";
             this.Text = "Calculator";
+            ((System.ComponentModel.ISupportInitialize)(this.LogoPictureBox)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -311,6 +343,7 @@
         private System.Windows.Forms.Button buttonDecimal;
         private System.Windows.Forms.TextBox ResultTextBox;
         private System.Windows.Forms.Button BackButton;
+        private System.Windows.Forms.PictureBox LogoPictureBox;
     }
 }
 
