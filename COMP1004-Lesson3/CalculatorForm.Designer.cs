@@ -46,6 +46,7 @@
             this.buttonNine = new System.Windows.Forms.Button();
             this.buttonDecimal = new System.Windows.Forms.Button();
             this.ResultTextBox = new System.Windows.Forms.TextBox();
+            this.BackButton = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // buttonClear
@@ -247,10 +248,21 @@
             this.ResultTextBox.Text = "0";
             this.ResultTextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
+            // BackButton
+            // 
+            this.BackButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BackButton.Location = new System.Drawing.Point(160, 142);
+            this.BackButton.Name = "BackButton";
+            this.BackButton.Size = new System.Drawing.Size(50, 50);
+            this.BackButton.TabIndex = 19;
+            this.BackButton.Text = "B";
+            this.BackButton.UseVisualStyleBackColor = true;
+            // 
             // CalculatorForm
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.ClientSize = new System.Drawing.Size(304, 441);
+            this.Controls.Add(this.BackButton);
             this.Controls.Add(this.ResultTextBox);
             this.Controls.Add(this.buttonDecimal);
             this.Controls.Add(this.buttonNine);
@@ -269,6 +281,8 @@
             this.Controls.Add(this.buttonSubtract);
             this.Controls.Add(this.buttonAdd);
             this.Controls.Add(this.buttonClear);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.MaximizeBox = false;
             this.Name = "CalculatorForm";
             this.Text = "Calculator";
             this.ResumeLayout(false);
@@ -296,6 +310,7 @@
         private System.Windows.Forms.Button buttonNine;
         private System.Windows.Forms.Button buttonDecimal;
         private System.Windows.Forms.TextBox ResultTextBox;
+        private System.Windows.Forms.Button BackButton;
     }
 }
 
